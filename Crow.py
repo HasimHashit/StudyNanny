@@ -27,15 +27,15 @@ def studyTime():
     print(choices)
 
 
-    account_sid = 'ACb8b5d1ad4fc61387577c55290863470a'
-    auth_token = '3b79785c4a053a3fce756931bf176f80'
+    account_sid = 'Your Twilio account SID'
+    auth_token = 'Your twilio auth token'
     client = Client(account_sid, auth_token)
 
     message = client.messages \
           .create(
         body= choices,
-        from_= '+12514395136',
-        to= '+2349060540946'
+        from_= 'Your twilio number',
+        to= 'Your personal number'
     )
 
 
